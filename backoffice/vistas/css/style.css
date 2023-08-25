@@ -307,3 +307,15 @@ PUNTOS DE QUIEBRE
 
 }
 
+.radio_item{
+	display: none;
+	}
+	
+	.label_item {
+	opacity: 0.1;
+	}
+	
+	.radio_item:checked + label {
+	opacity: 1;
+	}
+
