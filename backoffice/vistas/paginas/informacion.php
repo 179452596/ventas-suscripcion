@@ -23,8 +23,7 @@
     <div class="container-fluid">
    
    <?php 
-
-
+      include "modulos/chatbot/informacion-diseno.php";
     ?>   
 
     </div>
