@@ -1,8 +1,6 @@
-<div class="col-12 col-md-8">
 
-<section class="content-header">
-    
-    <div class="container-fluid">
+<section class="content-header">   
+    <div class="container">
       <div class="row mb-4">
         <div class="col-sm-6">
           <h1>Apariencia</h1>
@@ -10,15 +8,15 @@
           <ol>		
             <!--RADIO 1-->
             <h6>Icono del Widget</h3> <br>
-            <input type="radio" class="radio_item" value="" name="item" id="radio1" Checked>
-            <label class="label_item" for="radio1"> <i class="fas fa-comment-dots fa-lg" style="font-size: 3em;" ></i> </label>&emsp;
+            <input type="radio" class="radio_item" value="fa-comment-dots" name="item" id="radio1" checked onchange="updatePreview()">
+            <label class="label_item" for="radio1"> <i class="fas fa-comment-dots fa-lg" style="font-size: 3em;"></i> </label>&emsp;
 
             <!--RADIO 2-->
-            <input type="radio" class="radio_item" value="" name="item" id="radio2" >
+            <input type="radio" class="radio_item" value="fa-comment-alt" name="item" id="radio2" onchange="updatePreview()">
             <label class="label_item" for="radio2"> <i class="fas fa-comment-alt fa-lg" style="font-size: 3em;"></i></label>&emsp;
 
             <!--RADIO 3-->
-            <input type="radio" class="radio_item" value="" name="item" id="radio3">
+            <input type="radio" class="radio_item" value="fa-comments" name="item" id="radio3" onchange="updatePreview()">
             <label class="label_item" for="radio3"> <i class="fas fa-comments fa-lg" style="font-size: 3em;"></i></label>
           </ol>
 
@@ -42,9 +40,10 @@
           <ol>		
               <!--Botones para cambiar los colores-->
               <h6>Color del Widget</h3>
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Rojo</button>
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Azul</button>
-              <button type="button" class="btn btn-success" data-dismiss="modal">Verde</button>
+              <button type="button" class="btn btn-dark" data-dismiss="modal" onclick="changeColors('black')">Negro</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="changeColors('red')">Rojo</button>
+              <button type="button" class="btn btn-success" data-dismiss="modal" onclick="changeColors('green')">Verde</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="changeColors('blue')">Azul</button>
           </ol>
           <ol>		
               <!--Valor Numerico para el tiempo-->
@@ -57,10 +56,21 @@
               <input type="file" id="img" name="img" accept="image/*">
           </ol>
 		    </div>
+        <div class="col-sm-6">
+          <h1>Vista Previa</h1>
+          <br>
+          <br>
+          <br>
+          <div>
+            <button class="widget-button" id="widget-button">
+              <i class="selected-icon fas fa-comment-dots fa-lg" style="font-size: 1em;"></i>
+            </button>
+          </div>
+          
       </div>
-    </div><!-- /.container-fluid -->
+    </div>
 
   </section>
-	
-</div>
+
+  
 

@@ -87,6 +87,7 @@ $usuario = ControladorUsuarios::ctrMostrarUsuarios($item, $valor);
   	<link rel="stylesheet" href="vistas/css/style.css">
 
 	<!-- estilo personalizado -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
   	<!--=====================================
@@ -176,6 +177,8 @@ $usuario = ControladorUsuarios::ctrMostrarUsuarios($item, $valor);
 	<!-- iCheck -->
 	<!-- https://github.com/fronteed/iCheck/ -->
 	<script src="vistas/js/plugins/icheck.min.js"></script>
+	
+	
 
 </head>
 
@@ -259,6 +262,8 @@ include "paginas/modulos/footer.php";
 <script src="vistas/js/multinivel.js"></script>
 <script src="vistas/js/ingresos.js"></script>
 <script src="vistas/js/soporte.js"></script>
+<script src="vistas/js/widget.js"></script>
+
 
 </body>
 
